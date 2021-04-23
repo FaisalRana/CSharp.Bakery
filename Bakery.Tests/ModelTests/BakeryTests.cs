@@ -10,14 +10,23 @@ namespace Bakery.Tests
     public class BakeryTests
     {
         [TestMethod]
-        public void BuyBread_CalculatePricefor1LoafofBread_5()
+        public void CalcBread_CalculatePricefor1LoafofBread_5()
         {
             //Arrange
             Bread testBread = new Bread();
             //Act
-            int result = testBread.BuyBread(1);
+            int result = testBread.CalcBread(1);
             //Assert
             Assert.AreEqual(5,result);
+        }
+            public void CalcBread_CalculatePricefor2LoafofBread_10()
+        {
+            //Arrange
+            Bread testBread = new Bread();
+            //Act
+            int result = testBread.CalcBread(2);
+            //Assert
+            Assert.AreEqual(10,result);
         }
     }
 }
