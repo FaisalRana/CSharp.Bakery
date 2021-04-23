@@ -6,7 +6,7 @@ namespace Bakery
     public class Bread
     {
         public int CalcBread(int numOfBread) {
-          return numOfBread;
+          return numOfBread * 5;
         }
     }
 };
