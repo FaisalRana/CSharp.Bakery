@@ -7,7 +7,7 @@ namespace Bakery
     {
        
         public int BuyBread(int numOfBread) {
-          return numOfBread;
+          return numOfBread * 5;
         }
     }
 };
