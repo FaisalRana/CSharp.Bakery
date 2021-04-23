@@ -1,7 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Bakery.Models;
-using System;
-using System.Collections.Generic;
 
 
 namespace Bakery.Tests
@@ -19,7 +17,8 @@ namespace Bakery.Tests
             //Assert
             Assert.AreEqual(5,result);
         }
-            public void CalcBread_CalculatePricefor2LoafofBread_10()
+        [TestMethod]
+        public void CalcBread_CalculatePricefor2LoafofBread_10()
         {
             //Arrange
             Bread testBread = new Bread();
@@ -27,6 +26,16 @@ namespace Bakery.Tests
             int result = testBread.CalcBread(2);
             //Assert
             Assert.AreEqual(10,result);
+        }
+        [TestMethod]
+        public void CalcBread_Buy3LoavesForPriceof2_10()
+        {
+            //Arrange
+            Bread testBread = new Bread();
+            //Act
+            int result = testBread.CalcBread(3);
+            //Assert
+            Assert.AreEqual(20,result);
         }
     }
 }
