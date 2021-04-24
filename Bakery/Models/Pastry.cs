@@ -6,8 +6,8 @@ namespace Bakery.Models
 {
 	public class Pastry
 	{
-    public int CalcPastery(int numOfPastery) {
-      return numOfPastery * 2;
+    public int CalcPastry(int numOfPastry) {
+      return numOfPastry * 2;
         }
   }
 };
