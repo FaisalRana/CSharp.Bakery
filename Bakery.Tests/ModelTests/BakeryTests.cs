@@ -57,5 +57,14 @@ namespace Bakery.Tests
             //Assert
             Assert.AreEqual(35,result);
         }
+         public void CalcBread_Buy11LoavesWithDiscount_40()
+        {
+            //Arrange
+            Bread testBread = new Bread();
+            //Act
+            int result = testBread.CalcBread(3);
+            //Assert
+            Assert.AreEqual(35,result);
+        }
     }
 }
