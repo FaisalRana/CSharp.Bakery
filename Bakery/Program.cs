@@ -7,7 +7,11 @@ namespace Bakery.Models
   {
     public static void Main()
     {
-      Console.WriteLine("--------------------");
+  
+      Console.WriteLine("How much bread would you like to buy?");
+      int breadInput = Convert.ToInt32(Console.ReadLine()); 
+      Bread testBread = new Bread();
+      Console.WriteLine(testBread.CalcBread(breadInput));
      }
   }
 }
