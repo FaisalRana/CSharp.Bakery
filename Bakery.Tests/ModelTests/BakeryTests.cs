@@ -37,23 +37,13 @@ namespace Bakery.Tests
             //Assert
             Assert.AreEqual(10,result);
         }
-         [TestMethod]
-        public void CalcBread_Buy3LoavesForPriceof2_10()
-        {
-            //Arrange
-            Bread testBread = new Bread();
-            //Act
-            int result = testBread.CalcBread(3);
-            //Assert
-            Assert.AreEqual(10,result);
-        }
           [TestMethod]
         public void CalcBread_Buy10LoavesWithDiscount_35()
         {
             //Arrange
             Bread testBread = new Bread();
             //Act
-            int result = testBread.CalcBread(3);
+            int result = testBread.CalcBread(10);
             //Assert
             Assert.AreEqual(35,result);
         }

@@ -7,11 +7,14 @@ namespace Bakery.Models
   {
     public static void Main()
     {
-  
-      Console.WriteLine("How much bread would you like to buy?");
+      Console.WriteLine("Welcome to Brother Lasif's Bakery!");
+      Console.WriteLine("Please press enter [m] for the menu, or [y] to continue your order.");
+      Console.WriteLine("Please enter the amount of bread in loaves that you would like to buy:");
       int breadInput = Convert.ToInt32(Console.ReadLine()); 
       Bread testBread = new Bread();
-      Console.WriteLine(testBread.CalcBread(breadInput));
+      Console.ForegroundColor = ConsoleColor.Green;
+      Console.WriteLine("You have bought " + breadInput + " loaves of bread");
+      Console.WriteLine("You Owe $" + testBread.CalcBread(breadInput));
      }
   }
 }
