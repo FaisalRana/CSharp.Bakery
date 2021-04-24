@@ -7,7 +7,11 @@ namespace Bakery.Models
 	public class Pastry
 	{
     public int CalcPastry(int numOfPastry) {
+      if (numOfPastry % 3 == 0) {
+        return (numOfPastry * 2) - (numOfPastry/3 * 1);
+      }
       return numOfPastry * 2;
+
         }
   }
 };
