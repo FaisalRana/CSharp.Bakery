@@ -17,7 +17,7 @@ namespace Bakery.Tests
             Assert.AreEqual(2,result);
         }
         [TestMethod]
-        public void CalcBread_CalculatePricefor3PastryWithDiscount_5()
+        public void CalcPastry_CalculatePricefor3PastrysWithDiscount_5()
         {
             //Arrange
             Pastry testPastery = new Pastry();
@@ -25,6 +25,16 @@ namespace Bakery.Tests
             int result = testPastery.CalcPastry(3);
             //Assert
             Assert.AreEqual(5,result);
+        }
+        [TestMethod]
+        public void CalcPastry_CalculatePricefor4PastrysWithDiscount_5()
+        {
+            //Arrange
+            Pastry testPastery = new Pastry();
+            //Act
+            int result = testPastery.CalcPastry(4);
+            //Assert
+            Assert.AreEqual(7,result);
         }
     }
 }
