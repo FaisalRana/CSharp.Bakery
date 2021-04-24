@@ -9,10 +9,12 @@ namespace Bakery.Models
     public int CalcPastry(int numOfPastry) {
       if (numOfPastry % 3 == 0) {
         return (numOfPastry * 2) - (numOfPastry/3 * 1);
+      } else if (numOfPastry % 3 == 1) {
+        return (numOfPastry * 2) -((numOfPastry-1)/3 *1);
       }
       return numOfPastry * 2;
 
-        }
+     }
   }
 };
 
