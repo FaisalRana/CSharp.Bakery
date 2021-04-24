@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 namespace Bakery.Models
 {
-	public class Logic
+	public class Pastry
 	{
-    public int BuyBread(int numOfPastery) {
+    public int CalcPastery(int numOfPastery) {
       return numOfPastery;
         }
   }

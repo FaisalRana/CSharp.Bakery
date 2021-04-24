@@ -5,7 +5,7 @@ using Bakery.Models;
 namespace Bakery.Tests
 {
     [TestClass]
-    public class BakeryTests
+    public class BreadTests
     {
         [TestMethod]
         public void CalcBread_CalculatePricefor1LoafofBread_5()
@@ -47,14 +47,28 @@ namespace Bakery.Tests
             //Assert
             Assert.AreEqual(35,result);
         }
+          [TestMethod]
          public void CalcBread_Buy11LoavesWithDiscount_40()
         {
             //Arrange
             Bread testBread = new Bread();
             //Act
-            int result = testBread.CalcBread(3);
+            int result = testBread.CalcBread(11);
             //Assert
-            Assert.AreEqual(35,result);
+            Assert.AreEqual(40,result);
+        }
+    }
+    [TestClass]
+        public class PastryTests
+    { [TestMethod]
+        public void CalcBread_CalculatePricefor1Pastry_5()
+        {
+            //Arrange
+            Pastry testPastery = new Pastry();
+            //Act
+            int result = testPastery.CalcPastery(1);
+            //Assert
+            Assert.AreEqual(2,result);
         }
     }
 }
