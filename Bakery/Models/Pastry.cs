@@ -7,7 +7,7 @@ namespace Bakery.Models
 	public class Pastry
 	{
     public int CalcPastery(int numOfPastery) {
-      return numOfPastery;
+      return numOfPastery * 2;
         }
   }
 };

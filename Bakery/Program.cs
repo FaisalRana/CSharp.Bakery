@@ -7,6 +7,7 @@ namespace Bakery.Models
   {
     public static void Main()
     {
+      Console.ForegroundColor = ConsoleColor.Yellow;
       Console.WriteLine("Welcome to Brother Lasif's Bakery!");
       Console.WriteLine("Please press enter [m] for the menu, or [y] to continue your order.");
       Console.WriteLine("Please enter the amount of bread in loaves that you would like to buy:");
