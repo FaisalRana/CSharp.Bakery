@@ -57,28 +57,15 @@ namespace Bakery.Tests
             //Assert
             Assert.AreEqual(40,result);
         }
-    // }
-    // [TestClass]
-    //     public class PastryTests
-    // { [TestMethod]
-    //     public void CalcBread_CalculatePricefor1Pastry_2()
-    //     {
-    //         //Arrange
-    //         Pastry testPastery = new Pastry();
-    //         //Act
-    //         int result = testPastery.CalcPastery(1);
-    //         //Assert
-    //         Assert.AreEqual(2,result);
-    //     }
-    //     // [TestMethod]
-    //     // public void CalcBread_CalculatePricefor1Pastry_5()
-    //     // {
-    //     //     //Arrange
-    //     //     Pastry testPastery = new Pastry();
-    //     //     //Act
-    //     //     int result = testPastery.CalcPastery(1);
-    //     //     //Assert
-    //     //     Assert.AreEqual(2,result);
-    //     // }
+                  [TestMethod]
+         public void CalcBread_EnterNegativeInt_error()
+        {
+            //Arrange
+            Bread testBread = new Bread();
+            //Act
+            int result = testBread.CalcBread(-11);
+            //Assert
+            Assert.AreEqual(40,result);
+        }
     }
 }

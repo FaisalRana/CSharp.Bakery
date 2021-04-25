@@ -6,7 +6,6 @@ namespace Bakery.Models
     public class Bread
     {
         public int CalcBread(int numOfBread) {
-          int totalnumBread = numOfBread;
           if(numOfBread % 3 == 0) {
             return (numOfBread * 5) - ((numOfBread/3) * 5);     
           } else if(numOfBread % 3 == 1) {
