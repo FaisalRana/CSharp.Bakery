@@ -65,7 +65,7 @@ namespace Bakery.Tests
             //Act
             int result = testBread.CalcBread(-11);
             //Assert
-            Assert.AreEqual(40,result);
+            Assert.AreEqual(-55,result);
         }
     }
 }

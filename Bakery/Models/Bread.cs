@@ -4,7 +4,12 @@ using System.Collections.Generic;
 namespace Bakery.Models
 {
     public class Bread
-    {
+    { 
+      // public Bread(int aNumofBread) {
+      //   int numOfBread = aNumofBread;
+
+      // }
+
         public int CalcBread(int numOfBread) {
           if(numOfBread % 3 == 0) {
             return (numOfBread * 5) - ((numOfBread/3) * 5);     
