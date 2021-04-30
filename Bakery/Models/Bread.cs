@@ -17,13 +17,16 @@ namespace Bakery.Models
           if(numOfBread % 3 == 0) 
           {
             BreadPrice = (numOfBread * PricePerLoaf) - ((numOfBread/3) * PricePerLoaf);     
-          } else if(numOfBread % 3 == 1) 
+          } 
+          else if(numOfBread % 3 == 1) 
           {
             BreadPrice = (numOfBread * PricePerLoaf) - ((numOfBread-1)/3 * PricePerLoaf);
-          } else if (numOfBread % 3 == 2) 
+          } 
+          else if (numOfBread % 3 == 2) 
           {
             BreadPrice = (numOfBread * PricePerLoaf) - ((numOfBread-2)/3 *PricePerLoaf);
-          } else BreadPrice = numOfBread * PricePerLoaf;
+          } 
+          else BreadPrice = numOfBread * PricePerLoaf;
      }
          
     }

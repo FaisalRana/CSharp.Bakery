@@ -80,11 +80,14 @@ namespace Bakery.Models
                                 Pastry pastry = new Pastry(); 
                                 pastry.CalcPastry(numOfPastry);
                                 Console.ForegroundColor = ConsoleColor.Blue;
-                                Console.WriteLine("You have bought " + numOfPastry + " pastry's + pastry.pastry.PastryPrice");
+                                Console.WriteLine("You have bought " + numOfBread + " loaves  of bread for: $" + bread.BreadPrice);
+                                Console.WriteLine("You have bought " + numOfPastry + " pastry's for $" + pastry.PastryPrice);
+
                                 Console.BackgroundColor = ConsoleColor.Black;
                                 Console.ForegroundColor = ConsoleColor.Green;
 
                                 int total = bread.BreadPrice + pastry.PastryPrice;
+
                                 Console.WriteLine("Your total bill is $" + total);
 
                                 Console.ForegroundColor = ConsoleColor.Gray;
