@@ -7,7 +7,7 @@ namespace Bakery.Models
     {
         public static void Main()
         {
-            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.Black;
 
             string bakeryAscii = @"
@@ -56,8 +56,10 @@ namespace Bakery.Models
                 { 
                     Bread bread = new Bread();
                     bread.CalcBread(numOfBread);
-
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine("You have bought " + numOfBread + " loaves  of bread for: $" + bread.BreadPrice);
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+
                     Console.WriteLine("Would you like to buy some Pastry's today? [y] or [n]");
 
                     string pastryAnswer = Console.ReadLine().ToLower();
@@ -77,7 +79,7 @@ namespace Bakery.Models
                             {
                                 Pastry pastry = new Pastry(); 
                                 pastry.CalcPastry(numOfPastry);
-
+                                Console.ForegroundColor = ConsoleColor.Blue;
                                 Console.WriteLine("You have bought " + numOfPastry + " pastry's + pastry.pastry.PastryPrice");
                                 Console.BackgroundColor = ConsoleColor.Black;
                                 Console.ForegroundColor = ConsoleColor.Green;
