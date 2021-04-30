@@ -1,26 +1,30 @@
 using System;
 using System.Collections.Generic;
 
-
 namespace Bakery.Models
 {
-	public class Pastry
-	{
-    public int CalcPastry(int numOfPastry) {
-      if (numOfPastry % 3 == 0) {
-        return (numOfPastry * 2) - (numOfPastry/3 * 1);
-      } else if (numOfPastry % 3 == 1) {
-        return (numOfPastry * 2) - (numOfPastry-1)/3 *1;
-      } else if (numOfPastry % 3 == 2) {
-        return (numOfPastry * 2) - (numOfPastry - 2)/3 *1;
+    public class Pastry
+    { 
+      
+      public int PricePerPastry { get; private set; }
+      public int PastryPrice { get;set; }
+      public Pastry(int pricePerPastry)
+      {
+        PricePerPastry = pricePerPastry;
+        PastryPrice = 0;
       }
-      return numOfPastry * 2;
-
+       public void CalcPastry(int numOfPastry) {
+          if(numOfPastry % 3 == 0) 
+          {
+            PastryPrice = (numOfPastry * PricePerPastry) - ((numOfPastry/3) * PricePerPastry);     
+          } else if(numOfPastry % 3 == 1) 
+          {
+            PastryPrice = (numOfPastry * PricePerPastry) - ((numOfPastry-1)/3 * PricePerPastry);
+          } else if (numOfPastry % 3 == 2) 
+          {
+            PastryPrice = (numOfPastry * PricePerPastry) - ((numOfPastry-2)/3 *PricePerPastry);
+          } else PastryPrice = numOfPastry * PricePerPastry;
      }
-  }
-};
-
-// 1. Find length of string.
-// 2. Use conditional to determine if length is > 7.
-// 3. If length is greater then 7, return true. 
-
+         
+    }
+}

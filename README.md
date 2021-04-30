@@ -11,16 +11,17 @@ _built April 23 and 24, 2021_
   
 
 ## Setup and Installation
-_the code only depends on just a few built-in namespaces which will be brought into the picture by following these steps_
+_the code depends on just a few built-in namespaces which will be brought into the picture by following these steps_
 
 1. Use a termainl or console to navigate to the desired directory for this project
 2. Clone the project to your machine:
 >> ` $ git clone https://github.com/FaisalRana/CSharp.Bakery`
-3. Change directory into the project's root folder:
+3. Navigate to directory into the project's root folder:
 >> ` $ cd Bakery.Solution `
 4. Restore the project's dependencies:
->> ` $ dotnet restore Bakery Bakery.Tests `
-5. To use the project:
+>> ` $ dotnet restore Bakery `
+>> ` $ dotnet restore Bakery.Tests `
+5. Launch the program (/Bakery folder) :
 >> ` $ dotnet run `
 6. Or, to examine the files in VS Code instead of step 5:
 >> ` $ code . `
