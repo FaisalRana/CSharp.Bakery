@@ -8,21 +8,21 @@ namespace Bakery.Models
       
       public int PricePerPastry { get; private set; }
       public int PastryPrice { get;set; }
-      public Pastry(int pricePerPastry)
+      public Pastry()
       {
-        PricePerPastry = pricePerPastry;
-        PastryPrice = 0;
+        PricePerPastry = 2;
+        PastryPrice = 2;
       }
        public void CalcPastry(int numOfPastry) {
           if(numOfPastry % 3 == 0) 
           {
-            PastryPrice = (numOfPastry * PricePerPastry) - ((numOfPastry/3) * PricePerPastry);     
+            PastryPrice =  (numOfPastry * 2) - (numOfPastry/3 * 1);    
           } else if(numOfPastry % 3 == 1) 
           {
-            PastryPrice = (numOfPastry * PricePerPastry) - ((numOfPastry-1)/3 * PricePerPastry);
+            PastryPrice =  (numOfPastry * 2) -((numOfPastry-1)/3 *1);
           } else if (numOfPastry % 3 == 2) 
           {
-            PastryPrice = (numOfPastry * PricePerPastry) - ((numOfPastry-2)/3 *PricePerPastry);
+            PastryPrice = (numOfPastry * 2) - (numOfPastry - 2)/3 *1;
           } else PastryPrice = numOfPastry * PricePerPastry;
      }
          

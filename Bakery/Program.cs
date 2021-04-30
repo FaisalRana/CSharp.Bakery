@@ -54,7 +54,7 @@ namespace Bakery.Models
 
                 if (numOfBread >= 0 ) 
                 { 
-                    Bread bread = new Bread(5);
+                    Bread bread = new Bread();
                     bread.CalcBread(numOfBread);
 
                     Console.WriteLine("You have bought " + numOfBread + " loaves  of bread for: $" + bread.BreadPrice);
@@ -75,7 +75,7 @@ namespace Bakery.Models
                         {
                             if (numOfPastry >= 0) 
                             {
-                                Pastry pastry = new Pastry(2); 
+                                Pastry pastry = new Pastry(); 
                                 pastry.CalcPastry(numOfPastry);
 
                                 Console.WriteLine("You have bought " + numOfPastry + " pastry's + pastry.pastry.PastryPrice");

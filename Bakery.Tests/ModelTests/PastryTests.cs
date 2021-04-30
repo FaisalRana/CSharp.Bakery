@@ -12,9 +12,9 @@ namespace Bakery.Tests
             //Arrange
             Pastry testPastery = new Pastry();
             //Act
-            int result = testPastery.CalcPastry(1);
+            testPastery.CalcPastry(1);
             //Assert
-            Assert.AreEqual(2,result);
+            Assert.AreEqual(2,testPastery.PastryPrice);
         }
         [TestMethod]
         public void CalcPastry_CalculatePricefor3PastrysWithDiscount_5()
@@ -22,9 +22,9 @@ namespace Bakery.Tests
             //Arrange
             Pastry testPastery = new Pastry();
             //Act
-            int result = testPastery.CalcPastry(3);
+            testPastery.CalcPastry(3);
             //Assert
-            Assert.AreEqual(5,result);
+            Assert.AreEqual(5,testPastery.PastryPrice);
         }
         [TestMethod]
         public void CalcPastry_CalculatePricefor4PastrysWithDiscount_5()
@@ -32,9 +32,9 @@ namespace Bakery.Tests
             //Arrange
             Pastry testPastery = new Pastry();
             //Act
-            int result = testPastery.CalcPastry(4);
+            testPastery.CalcPastry(4);
             //Assert
-            Assert.AreEqual(7,result);
+            Assert.AreEqual(7,testPastery.PastryPrice);
         }
                 [TestMethod]
         public void CalcPastry_CalculatePricefor5PastrysWithDiscount_9()
@@ -42,9 +42,9 @@ namespace Bakery.Tests
             //Arrange
             Pastry testPastery = new Pastry();
             //Act
-            int result = testPastery.CalcPastry(5);
+            testPastery.CalcPastry(5);
             //Assert
-            Assert.AreEqual(9,result);
+            Assert.AreEqual(9,testPastery.PastryPrice);
         }
     }
 }

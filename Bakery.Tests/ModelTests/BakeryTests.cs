@@ -13,9 +13,9 @@ namespace Bakery.Tests
             //Arrange
             Bread testBread = new Bread();
             //Act
-            int result = testBread.CalcBread(1);
+            testBread.CalcBread(1);
             //Assert
-            Assert.AreEqual(5,result);
+            Assert.AreEqual(testBread.BreadPrice,5);
         }
         [TestMethod]
         public void CalcBread_CalculatePricefor2LoafofBread_10()
@@ -23,9 +23,9 @@ namespace Bakery.Tests
             //Arrange
             Bread testBread = new Bread();
             //Act
-            int result = testBread.CalcBread(2);
+            testBread.CalcBread(2);
             //Assert
-            Assert.AreEqual(10,result);
+            Assert.AreEqual(10,testBread.BreadPrice);
         }
         [TestMethod]
         public void CalcBread_Buy3LoavesForPriceof2_10()
@@ -33,9 +33,9 @@ namespace Bakery.Tests
             //Arrange
             Bread testBread = new Bread();
             //Act
-            int result = testBread.CalcBread(3);
+            testBread.CalcBread(3);
             //Assert
-            Assert.AreEqual(10,result);
+            Assert.AreEqual(10,testBread.BreadPrice);
         }
           [TestMethod]
         public void CalcBread_Buy10LoavesWithDiscount_35()
@@ -43,9 +43,9 @@ namespace Bakery.Tests
             //Arrange
             Bread testBread = new Bread();
             //Act
-            int result = testBread.CalcBread(10);
+            testBread.CalcBread(10);
             //Assert
-            Assert.AreEqual(35,result);
+            Assert.AreEqual(35,testBread.BreadPrice);
         }
           [TestMethod]
          public void CalcBread_Buy11LoavesWithDiscount_40()
@@ -53,9 +53,9 @@ namespace Bakery.Tests
             //Arrange
             Bread testBread = new Bread();
             //Act
-            int result = testBread.CalcBread(11);
+            testBread.CalcBread(11);
             //Assert
-            Assert.AreEqual(40,result);
+            Assert.AreEqual(40,testBread.BreadPrice);
         }
                   [TestMethod]
          public void CalcBread_EnterNegativeInt_error()
@@ -63,9 +63,9 @@ namespace Bakery.Tests
             //Arrange
             Bread testBread = new Bread();
             //Act
-            int result = testBread.CalcBread(-11);
+            testBread.CalcBread(-11);
             //Assert
-            Assert.AreEqual(-55,result);
+            Assert.AreEqual(-55,testBread.BreadPrice);
         }
     }
 }

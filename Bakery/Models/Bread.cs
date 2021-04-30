@@ -8,9 +8,9 @@ namespace Bakery.Models
       
       public int PricePerLoaf { get; private set; }
       public int BreadPrice { get;set; }
-      public Bread(int loafPrice)
+      public Bread()
       {
-        PricePerLoaf = loafPrice;
+        PricePerLoaf = 5;
         BreadPrice = 0;
       }
        public void CalcBread(int numOfBread) {
